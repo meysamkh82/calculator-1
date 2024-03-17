@@ -1,0 +1,107 @@
+body{
+    background-color: cornflowerblue;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+#wrapper{
+    margin:65px auto;
+    background:rgb(30, 27, 214);
+    border-radius: 5px;
+    max-width:340px;
+    padding:10px;
+    box-shadow:0 0 8px black;
+}
+#input{
+    width:100%;
+    border-bottom: 2px solid black;
+    padding:5px;
+    box-sizing: border-box;
+}
+input[type="text"]{
+    width:100%;
+    padding:3px;
+    border:none;
+    height: 60px;
+    border-radius: 5px;
+    font-size:30px;
+    background-color:rgb(87, 201, 253);
+}
+#dokmeha{
+    width:100%;
+    margin:5px 0px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#d1{
+   flex-basis:250px;
+   display:flex;
+   flex-direction:column;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+#d2{
+    flex-basis:70px;
+    display:flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+   
+}
+#d2 button{
+    padding:5px 0px;
+    font-size:40px;
+    font-weight: 700;
+    background:rgb(1, 12, 61);
+     margin:10px 0;
+     flex-basis: 65px;
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(14, 182, 248);
+}
+#d1 button{
+    padding:5px 0px;
+    font-size:40px;
+    font-weight: 700;
+    background:rgb(104, 195, 236);
+     margin:10px 0; 
+    flex-basis:65px;
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(37, 1, 122);
+}
+#m1{
+    display:flex;
+    flex-basis:70px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#m1 button{
+    background:rgb(1, 12, 61);
+    font-size:36px;
+    color:rgb(14, 182, 248);
+}
+#m1 button:nth-child(1){
+    background:red;
+    color:white;
+}
+#m2{
+    display:flex;
+    flex-basis: 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+button:hover{
+    opacity:0.8;
+    box-shadow: 0 0 5px;
+}
+
+@media screen and(max-width:600px) {
+    #wrapper{
+        margin:90px auto;
+    }
+}

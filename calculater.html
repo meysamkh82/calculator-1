@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onkeyup="txt(event)">
+        <div id="wrapper">
+            <div id="input"><input type="text" placeholder="insert number" id="inp" readonly></div>
+            <div id="dokmeha">
+                <div id="d1">
+                    <div id="m1">
+                        <button onclick="reset()">C</button>
+                        <button onclick="radical()" id="radical">&radic;</button>
+                        <button onclick="opertion(this)">%</button>
+                    </div>
+                    <div id="m2">
+                        <button onclick="clc(this)" class="adad">1</button>
+                        <button onclick="clc(this)" class="adad">2</button>
+                        <button onclick="clc(this)" class="adad">3</button>
+                        <button onclick="clc(this)" class="adad">4</button>
+                        <button onclick="clc(this)" class="adad">5</button>
+                        <button onclick="clc(this)" class="adad">6</button>
+                        <button onclick="clc(this)" class="adad">7</button>
+                        <button onclick="clc(this)" class="adad">8</button>
+                        <button onclick="clc(this)" class="adad">9</button>
+                        <button onclick="minus(this)" class="adad">+/-</button>
+                        <button onclick="clc(this)" class="adad">0</button>
+                        <button onclick="clc(this)" class="adad">.</button>  
+                    </div>
+                </div>
+                <div id="d2">
+                    <button onclick="opertion(this)" id="sum">+</button>
+                    <button onclick="opertion(this)" id="menha">-</button>
+                    <button onclick="opertion(this)" id="zarb">×</button>
+                    <button onclick="opertion(this)" id="th">÷</button>
+                    <button onclick="result()" id="mosavi">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="./calculater.js"></script>
+</body>
+</html>
